@@ -1,0 +1,10 @@
+application:
+  name: rsshub
+  pods:
+  - name: app
+    image: diygod/rsshub:latest
+    path: /
+    servicePorts:
+    - 1200
+    vars:
+      CACHE_TYPE: memory
